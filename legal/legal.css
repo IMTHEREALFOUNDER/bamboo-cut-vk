@@ -1,0 +1,21 @@
+/* Legal pages (Phase 18, D-66): plain reading pages in the SUMI palette, light and dark. */
+:root { --bg: #f4f1ea; --text: #1b1a17; --soft: #55524b; --line: #d8d2c4; --accent: #b3261e; color-scheme: light dark; }
+@media (prefers-color-scheme: dark) { :root { --bg: #0e0e0f; --text: #ece8de; --soft: #a39e92; --line: #2c2b28; --accent: #e0503f; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 -apple-system, "Segoe UI", Roboto, "Noto Sans", sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+header { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
+.seal { width: 32px; height: 32px; display: grid; place-items: center; background: var(--accent); color: #fff; font-size: 18px; border-radius: 3px; }
+.brand { font-weight: 700; letter-spacing: .3em; font-size: 13px; }
+nav.langs { margin-left: auto; display: flex; gap: 12px; font-size: 14px; }
+nav.langs a { color: var(--soft); }
+nav.langs a[aria-current] { color: var(--text); font-weight: 700; text-decoration: none; }
+h1 { font-size: 28px; line-height: 1.2; margin: 24px 0 4px; }
+h2 { font-size: 19px; margin: 32px 0 8px; padding-top: 16px; border-top: 1px solid var(--line); }
+.date { color: var(--soft); font-size: 14px; margin: 0 0 24px; }
+a { color: var(--accent); }
+table { width: 100%; border-collapse: collapse; font-size: 14px; margin: 8px 0; }
+th, td { text-align: left; vertical-align: top; padding: 8px 6px; border-bottom: 1px solid var(--line); }
+th { color: var(--soft); font-weight: 600; }
+.wrap { overflow-x: auto; }
+article[hidden] { display: none; }
